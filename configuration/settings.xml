@@ -18,6 +18,7 @@
 						<updatePolicy>never</updatePolicy>
 					</releases>
 				</repository>
+				</repositories>
 			<pluginRepositories>
 				<pluginRepository>
 					<id>Nexus</id>
@@ -34,8 +35,9 @@
 			</pluginRepositories>
 		</profile>
 	</profiles>
-
 	<activeProfiles>
 		<activeProfile>build.repos</activeProfile>
 	</activeProfiles>
 </settings>
+
+
