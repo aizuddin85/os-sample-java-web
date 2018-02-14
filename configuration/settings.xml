@@ -1,0 +1,41 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                          http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	  <profiles>
+		<profile>
+			<id>build.repos</id>
+				<repositories>
+				<repository>
+					<id>Nexus</id>
+					<name>Local Nexus</name>
+					<url>http://svn.fif.co.id:8888/nexus-2.0.6/content/groups/FIF-Group</url>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+					<releases>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</releases>
+				</repository>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>Nexus</id>
+					<name>Local Nexus</name>
+					<url>http://svn.fif.co.id:8888/nexus-2.0.6/content/groups/FIF-Group</url>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+					<releases>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</releases>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+
+	<activeProfiles>
+		<activeProfile>build.repos</activeProfile>
+	</activeProfiles>
+</settings>
