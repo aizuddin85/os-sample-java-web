@@ -8,7 +8,12 @@
   <name>getting-started-tomcat Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
-
+    <repositories>
+        <repository>
+            <id>openshift-repository</id>
+            <url>http://svn.fif.co.id:8888/nexus-2.0.6/content/groups/FIF-Group</url>
+        </repository>
+    </repositories>
   <dependencies>
       <!-- http://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
       <dependency>
